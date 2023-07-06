@@ -1983,7 +1983,7 @@ guidata(hObject, handles);
 function TMotEdit_Callback(hObject, eventdata, handles)
 
 % If we enter a reasonable value, it is taken as a new threshold
-if ~isempty(str2double(get(hObject,'String'))) && (str2double(get(hObject,'String')) > 0) && (str2double(get(hObject,'String')) <= 0.5)
+if ~isempty(str2double(get(hObject,'String'))) && (str2double(get(hObject,'String')) > 0) && (str2double(get(hObject,'String')) <= 3)
     handles.Tmot = str2double(get(hObject,'String'));
     set(hObject,'BackgroundColor', [101,140,196]/255);
     
